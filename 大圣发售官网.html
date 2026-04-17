@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大圣发售 - 知识IP私域发售操盘专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+        * {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a1628 0%, #1a365d 50%, #0a1628 100%);
+        }
+
+        .glow-blue {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+
+        .tech-grid {
+            background-image:
+                linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #3b82f6, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .timeline-line {
+            background: linear-gradient(180deg, transparent, #3b82f6, transparent);
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen scroll-smooth">
+
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-opacity-90 bg-slate-900 backdrop-blur-md border-b border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">大圣发售</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-blue-400 transition">关于我们</a>
+                    <a href="#services" class="text-gray-300 hover:text-blue-400 transition">服务内容</a>
+                    <a href="#process" class="text-gray-300 hover:text-blue-400 transition">执行流程</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-blue-400 transition">合作方式</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition">联系我们</a>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition glow-blue">
+                    立即合作
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="pt-32 pb-20 px-4 tech-grid">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-block mb-6 px-4 py-2 bg-blue-900 bg-opacity-30 rounded-full border border-blue-700">
+                    <span class="text-blue-400 text-sm">⚡ 私域发售操盘专家</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 glow-text">
+                    知识IP<span class="gradient-text">规模化变现</span>放大器
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                    从裂变拉新 → 产品升级 → 直播发售 → 持续变现<br>
+                    只做一件事：帮已经跑通0-1的知识IP，通过一场有策划的发售，实现规模化变现
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg transition glow-blue">
+                        <i class="fa fa-rocket mr-2"></i>开始发售
+                    </button>
+                    <button class="border border-blue-500 text-blue-400 hover:bg-blue-900 hover:bg-opacity-30 px-8 py-4 rounded-full text-lg transition">
+                        <i class="fa fa-play-circle mr-2"></i>了解详情
+                    </button>
+                </div>
+            </div>
+
+            <!-- 核心数据 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover animate-float">
+                    <div class="text-5xl font-bold gradient-text mb-2">20+</div>
+                    <div class="text-gray-400">累计服务知识IP</div>
+                </div>
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover animate-float" style="animation-delay: 0.2s;">
+                    <div class="text-5xl font-bold gradient-text mb-2">千万+</div>
+                    <div class="text-gray-400">发售业务突破</div>
+                </div>
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover animate-float" style="animation-delay: 0.4s;">
+                    <div class="text-5xl font-bold gradient-text mb-2">60%</div>
+                    <div class="text-gray-400">AI辅助生成内容</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">我们是谁</h2>
+                <p class="text-gray-400 text-lg">专注服务知识IP的私域发售操盘团队</p>
+            </div>
+
+            <div class="bg-slate-800 bg-opacity-50 rounded-3xl p-8 md:p-12 border border-blue-900">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">只做"放大器"，不做小白孵化</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            我们专注服务已经跑通0-1的知识IP，通过一场有策划的发售，实现规模化变现。
+                            不做小白孵化，我们只做"放大器"。
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            每个项目沉淀20-30个可复用SOP，60%内容由AI辅助生成���执行效率极高。
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 rounded-full p-2 mr-4">
+                                <i class="fa fa-check text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">结果付费，风险共担</h4>
+                                <p class="text-gray-400 text-sm">基础操盘费仅2,980元，核心收入来自发售GMV的20%分佣</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 rounded-full p-2 mr-4">
+                                <i class="fa fa-users text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">分工明确，各展所长</h4>
+                                <p class="text-gray-400 text-sm">您负责内容和资源，我们负责策划和执行</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 rounded-full p-2 mr-4">
+                                <i class="fa fa-file-text text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">SOP沉淀，持续复用</h4>
+                                <p class="text-gray-400 text-sm">每场发售沉淀20-30个SOP，下次可直接复用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 三大核心问题 -->
+    <section id="services" class="py-20 px-4 bg-slate-900 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">解决三大核心问题</h2>
+                <p class="text-gray-400 text-lg">从流量到产品到成交，全流程解决方案</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 问题1 -->
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                    <div class="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">流量从哪来？</h3>
+                    <p class="text-blue-400 font-bold mb-4">KOL私域裂变拉新</p>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>招募KOL（学员、渠道、行业朋友）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>KOL只需转发海报+话术到朋友圈</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>通过溯源工具追踪效果，按效果分佣</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-slate-900 rounded-lg">
+                        <div class="text-sm text-gray-400 mb-2">预估效果</div>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-blue-400">50-100</div>
+                                <div class="text-xs text-gray-500">招募KOL</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-blue-400">1500-5000</div>
+                                <div class="text-xs text-gray-500">新增用户</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 问题2 -->
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                    <div class="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">产品怎么卖更贵？</h3>
+                    <p class="text-blue-400 font-bold mb-4">高客单产品体系升级</p>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>设计更高客单的合伙人产品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>包含学习权益+变现权益+赋能成长</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>一场发售同时卖两个产品</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-slate-900 rounded-lg">
+                        <div class="text-sm text-gray-400 mb-2">产品体系</div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">基础课程</span>
+                                <span class="text-blue-400 font-bold">¥3,980</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">战略合伙人</span>
+                                <span class="text-blue-400 font-bold">¥25,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 问题3 -->
+                <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                    <div class="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa fa-shopping-cart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">怎么成交？</h3>
+                    <p class="text-blue-400 font-bold mb-4">全流程发售操盘</p>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>从策划到收单的全流程操盘</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>您只需专注输出内容和建立信任</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                            <span>3天直播集中成交，双产品同步推</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-slate-900 rounded-lg">
+                        <div class="text-sm text-gray-400 mb-2">直播结构</div>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
+                                <span class="text-gray-300">公开课主题设计</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
+                                <span class="text-gray-300">每天内容结构规划</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
+                                <span class="text-gray-300">成交话术框架</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 执行流程 -->
+    <section id="process" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">执行流程</h2>
+                <p class="text-gray-400 text-lg">2-3周完成整场发售</p>
+            </div>
+
+            <div class="relative">
+                <!-- 时间线 -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 timeline-line"></div>
+
+                <div class="space-y-12">
+                    <!-- 阶段1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                                <div class="text-blue-400 font-bold mb-2">阶段 1</div>
+                                <h3 class="text-2xl font-bold text-white mb-4">策划筹备期</h3>
+                                <p class="text-gray-400 mb-4">周期：3-5天</p>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>• 产品梳理与包装</li>
+                                    <li>• 裂变机制设计</li>
+                                    <li>• 物料制作（海报、话术、社群素材）</li>
+                                    <li>• 直播结构设计</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-12 h-12 bg-blue-600 rounded-full items-center justify-center z-10 my-4 md:my-0">
+                            <i class="fa fa-cog text-white"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+
+                    <!-- 阶段2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12"></div>
+                        <div class="hidden md:flex w-12 h-12 bg-blue-600 rounded-full items-center justify-center z-10 my-4 md:my-0">
+                            <i class="fa fa-share-alt text-white"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                                <div class="text-blue-400 font-bold mb-2">阶段 2</div>
+                                <h3 class="text-2xl font-bold text-white mb-4">裂变拉新期</h3>
+                                <p class="text-gray-400 mb-4">周期：5-7天</p>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>• KOL招募与邀约</li>
+                                    <li>• 合伙人预售（私域1v1沟通）</li>
+                                    <li>• 社群运营与预热</li>
+                                    <li>• 建立期待感</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 阶段3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                                <div class="text-blue-400 font-bold mb-2">阶段 3</div>
+                                <h3 class="text-2xl font-bold text-white mb-4">直播发售期</h3>
+                                <p class="text-gray-400 mb-4">周期：3天</p>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>• 3天直播操盘</li>
+                                    <li>• 直播结构执行、社群同步</li>
+                                    <li>• 双产品同步卖</li>
+                                    <li>• 限时福利、连麦成交</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-12 h-12 bg-blue-600 rounded-full items-center justify-center z-10 my-4 md:my-0">
+                            <i class="fa fa-video-camera text-white"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+
+                    <!-- 阶段4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12"></div>
+                        <div class="hidden md:flex w-12 h-12 bg-blue-600 rounded-full items-center justify-center z-10 my-4 md:my-0">
+                            <i class="fa fa-chart-line text-white"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 border border-blue-900 card-hover">
+                                <div class="text-blue-400 font-bold mb-2">阶段 4</div>
+                                <h3 class="text-2xl font-bold text-white mb-4">收尾复盘期</h3>
+                                <p class="text-gray-400 mb-4">周期：2-3天</p>
+                                <ul class="text-gray-400 text-sm space-y-2">
+                                    <li>• 二次转化未成交用户</li>
+                                    <li>• 数据复盘分析</li>
+                                    <li>• SOP文档交付</li>
+                                    <li>• 未来可复用</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作方式 -->
+    <section id="pricing" class="py-20 px-4 bg-slate-900 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">合作方式</h2>
+                <p class="text-gray-400 text-lg">结果付费，风险共担</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-slate-800 bg-opacity-50 rounded-3xl p-8 md:p-12 border border-blue-900 glow-blue">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">费用结构</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center p-4 bg-slate-900 rounded-lg">
+                                    <span class="text-gray-400">基础操盘费</span>
+                                    <span class="text-2xl font-bold gradient-text">¥2,980</span>
+                                </div>
+                                <div class="flex justify-between items-center p-4 bg-slate-900 rounded-lg">
+                                    <span class="text-gray-400">结果分佣</span>
+                                    <span class="text-2xl font-bold gradient-text">20%</span>
+                                </div>
+                                <div class="flex justify-between items-center p-4 bg-slate-900 rounded-lg">
+                                    <span class="text-gray-400">设计图片费</span>
+                                    <span class="text-2xl font-bold gradient-text">¥500-800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">分工明确</h3>
+                            <div class="space-y-4">
+                                <div class="p-4 bg-blue-900 bg-opacity-20 rounded-lg">
+                                    <div class="text-blue-400 font-bold mb-2">我们承担</div>
+                                    <p class="text-gray-400 text-sm">全部策划、物料、社群运营、直播协助等执行成本</p>
+                                </div>
+                                <div class="p-4 bg-slate-900 rounded-lg">
+                                    <div class="text-white font-bold mb-2">您承担</div>
+                                    <p class="text-gray-400 text-sm">课程交付、直播主讲、KOL关系维护</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-blue-900 pt-8">
+                        <h4 class="text-xl font-bold text-white mb-4 text-center">收益示例</h4>
+                        <div class="bg-slate-900 rounded-lg p-6">
+                            <div class="text-center mb-4">
+                                <span class="text-gray-400">假设本次发售GMV = </span>
+                                <span class="text-3xl font-bold gradient-text">¥100万</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center p-4 bg-blue-900 bg-opacity-20 rounded-lg">
+                                    <div class="text-gray-400 text-sm mb-1">您的收入</div>
+                                    <div class="text-2xl font-bold text-white">¥800,000</div>
+                                    <div class="text-xs text-gray-500">80%</div>
+                                </div>
+                                <div class="text-center p-4 bg-slate-800 rounded-lg">
+                                    <div class="text-gray-400 text-sm mb-1">我们的收入</div>
+                                    <div class="text-2xl font-bold text-white">¥202,980</div>
+                                    <div class="text-xs text-gray-500">基础费+20%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-400 text-sm">
+                            <i class="fa fa-info-circle text-blue-400 mr-2"></i>
+                            核心逻辑：我们不赚前置费，只赚结果。做不出结果，我们也赚不到钱。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作流程 -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">合作流程</h2>
+                <p class="text-gray-400 text-lg">5步开启发售之旅</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 border border-blue-900 card-hover h-full">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">填写调研表</h4>
+                        <p class="text-gray-400 text-sm">填写资源调研表</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 border border-blue-900 card-hover h-full">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">审核评估</h4>
+                        <p class="text-gray-400 text-sm">我方审核是否适合发售</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 border border-blue-900 card-hover h-full">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">沟通方案</h4>
+                        <p class="text-gray-400 text-sm">双方视频/线下沟通</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 border border-blue-900 card-hover h-full">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">4</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">签约打款</h4>
+                        <p class="text-gray-400 text-sm">确认方案、签约打款</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 border border-blue-900 card-hover h-full">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">5</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">正式启动</h4>
+                        <p class="text-gray-400 text-sm">2-3周内完成整场发售</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最终实现 -->
+    <section class="py-20 px-4 bg-slate-900 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">我们最终帮您实现什么？</h2>
+                <p class="text-gray-400 text-lg">不是爆一场单，是搭一套系统</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 card-hover">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h4 class="text-xl font-bold text-white mb-2">大额现金流</h4>
+                    <p class="text-blue-100">一次发售，产生20万-100万+现金流</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 card-hover">
+                    <div class="text-4xl mb-4">🔄</div>
+                    <h4 class="text-xl font-bold text-white mb-2">裂变增长系统</h4>
+                    <p class="text-blue-100">搭建长期裂变增长系统，合伙人持续帮您推广</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 card-hover">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h4 class="text-xl font-bold text-white mb-2">品牌势能</h4>
+                    <p class="text-blue-100">提升品牌势能，打造行业影响力</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 card-hover">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h4 class="text-xl font-bold text-white mb-2">用户结构升级</h4>
+                    <p class="text-blue-100">升级用户结构，从卖课变成卖系统</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">立即开启发售之旅</h2>
+                <p class="text-gray-400 text-lg">填写下方信息，我们将在24小时内与您联系</p>
+            </div>
+
+            <div class="bg-slate-800 bg-opacity-50 rounded-3xl p-8 md:p-12 border border-blue-900 glow-blue">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-400 mb-2">姓名</label>
+                            <input type="text" class="w-full bg-slate-900 border border-blue-900 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="请输入您的姓名">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">联系电话</label>
+                            <input type="tel" class="w-full bg-slate-900 border border-blue-900 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="请输入您的电话">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-2">公司/品牌名称</label>
+                        <input type="text" class="w-full bg-slate-900 border border-blue-900 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition" placeholder="请输入您的公司或品牌名称">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-2">现有产品/服务</label>
+                        <textarea class="w-full bg-slate-900 border border-blue-900 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition h-24" placeholder="请简单描述您现有的产品或服务"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-2">目前粉丝量</label>
+                        <select class="w-full bg-slate-900 border border-blue-900 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                            <option>请选择粉丝量范围</option>
+                            <option>1万以下</option>
+                            <option>1-5万</option>
+                            <option>5-10万</option>
+                            <option>10万以上</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-lg font-bold text-lg transition glow-blue">
+                        <i class="fa fa-paper-plane mr-2"></i>提交咨询
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-12 px-4 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">大圣发售</h3>
+                    <p class="text-gray-400 text-sm">知识IP私域发售操盘专家</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-blue-400 transition">关于我们</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition">服务内容</a></li>
+                        <li><a href="#process" class="hover:text-blue-400 transition">执行流程</a></li>
+                        <li><a href="#pricing" class="hover:text-blue-400 transition">合作方式</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">联系方式</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><i class="fa fa-weixin mr-2"></i>微信：bianxiananan13</li>
+                        <li><i class="fa fa-envelope mr-2"></i>邮箱：96590903939@qq.com</li>
+                        <li><i class="fa fa-phone mr-2"></i>电话：15959292441</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-slate-700 transition">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-slate-700 transition">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-slate-700 transition">
+                            <i class="fa fa-video-camera"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-900 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 大圣发售团队 | 孙南·喜得·家兴</p>
+                <p class="mt-2">专注服务知识IP，实现规模化变现</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 滚动动画脚本 -->
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 滚动显示动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
